@@ -1,0 +1,174 @@
+the cat sat on the mat
+the cat sat on the floor
+the cat slept on the mat
+the cat slept on the floor
+the cat walked outside
+the cat walked across the room
+the cat looked at the dog
+the cat chased the mouse
+the cat ate the food
+the cat drank some water
+the dog sat on the floor
+the dog slept on the mat
+the dog walked outside
+the dog ran across the yard
+the dog looked at the cat
+the dog chased the ball
+the dog ate the food
+the dog drank some water
+the bird sat on the tree
+the bird flew across the sky
+the bird flew over the house
+the bird looked at the cat
+the bird landed on the roof
+the bird ate some food
+the mouse ran across the floor
+the mouse hid under the table
+the mouse looked at the cat
+the mouse ate some food
+the boy walked to the park
+the boy played with the dog
+the boy kicked the ball
+the boy picked up the ball
+the boy walked home
+the girl walked to the park
+the girl played with the cat
+the girl picked up the book
+the girl read the book
+the girl walked home
+the sun rose in the morning
+the sun was bright in the sky
+the sky was blue
+the sky was clear
+the clouds moved across the sky
+the rain fell on the ground
+the rain stopped in the afternoon
+the wind moved through the trees
+the tree stood beside the house
+the tree had green leaves
+the leaves moved in the wind
+the house stood beside the road
+the house had a red door
+the door opened slowly
+the boy opened the door
+the girl closed the door
+the car moved down the road
+the car stopped at the house
+the road went through the town
+the road was long and quiet
+the train moved through the town
+the train stopped at the station
+the people waited at the station
+the people walked into the station
+the people got on the train
+the teacher walked into the classroom
+the teacher opened the book
+the teacher wrote on the board
+the students sat at their desks
+the students opened their books
+the students read the lesson
+the students wrote their answers
+the student asked a question
+the teacher answered the question
+the computer sat on the desk
+the computer showed a message
+the boy opened the computer
+the girl typed on the keyboard
+the keyboard was on the desk
+the screen showed a picture
+the phone was on the table
+the phone rang in the morning
+the boy picked up the phone
+the girl looked at the phone
+the clock was on the wall
+the clock showed the time
+the morning was quiet
+the afternoon was warm
+the evening was cold
+the night was dark
+the stars appeared in the sky
+the moon was bright
+the water flowed through the river
+the river went through the forest
+the forest was full of trees
+the animals lived in the forest
+the rabbit ran through the grass
+the rabbit hid behind the tree
+the fox walked through the forest
+the fox looked at the rabbit
+the bear walked near the river
+the bear drank some water
+the fish swam through the water
+the fish lived in the river
+the boat moved across the water
+the boat stopped near the shore
+the people walked along the beach
+the waves moved toward the shore
+the sand was warm
+the beach was quiet
+the boy picked up a stone
+the girl picked up a shell
+the stone was small
+the shell was white
+the game started in the afternoon
+the players ran across the field
+the player kicked the ball
+the ball moved across the field
+the goalkeeper caught the ball
+the team scored a goal
+the crowd cheered for the team
+the players walked back to the field
+the game continued until the evening
+the player passed the ball
+the player ran toward the goal
+the player scored a goal
+the coach watched the game
+the coach talked to the players
+the players listened to the coach
+the team trained every morning
+the team played every weekend
+the robot moved across the floor
+the robot stopped near the wall
+the robot turned toward the door
+the robot followed the line
+the robot detected the object
+the robot moved around the object
+the robot returned to the starting point
+the machine made a strange sound
+the machine stopped working
+the engineer checked the machine
+the engineer fixed the machine
+the engineer tested the machine
+the program started successfully
+the program printed a message
+the program read the file
+the program opened the file
+the program closed the file
+the program learned from the data
+the model read the data
+the model predicted the next word
+the model made a prediction
+the model calculated the loss
+the model changed its parameters
+the model trained on the data
+the model became better over time
+the model generated a new word
+the model generated another word
+the model used the previous words
+the model looked at the context
+the model found a pattern
+the model learned a pattern
+the model made a mistake
+the model tried again
+the model improved after training
+the data contained many sentences
+the dataset contained many words
+the words appeared many times
+the model saw the same pattern
+the model learned from repetition
+the training started in the morning
+the training continued through the day
+the training finished in the evening
+the loss became smaller
+the prediction became better
+the program finished successfully
