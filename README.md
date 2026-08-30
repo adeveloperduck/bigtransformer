@@ -4,7 +4,7 @@ this is a slightly bigger transformer that i threw together with hopes and dream
 https://github.com/user-attachments/assets/91380331-ca71-4a07-8dec-b47d19749cfe
 
 
-it reads a text file, trains on it, and predicts how ever words you want (no guarantees)
+it reads a text file, trains on it, and predicts how ever many words you want
 it's probably fine.
 
 start by cloning the repo
