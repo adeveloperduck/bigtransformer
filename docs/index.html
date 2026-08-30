@@ -81,6 +81,14 @@
     color: var(--faint);
   }
 
+  .demo {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--line);
+    margin-bottom: 40px;
+  }
+
   .hero-note {
     font-size: 13px;
     color: var(--faint);
@@ -177,6 +185,10 @@
 
   <h1>bigtransformer</h1>
   <p class="tagline">a slightly bigger transformer, thrown together with hopes and dreams. reads a text file, trains on it, predicts the next words.</p>
+
+  <video class="demo" autoplay muted loop playsinline>
+    <source src="demo.mp4" type="video/mp4">
+  </video>
 
   <div class="install" id="install" data-copy="git clone https://github.com/adeveloperduck/bigtransformer && cd bigtransformer">
     <code>git clone https://github.com/adeveloperduck/bigtransformer</code>
