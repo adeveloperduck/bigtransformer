@@ -26,6 +26,24 @@
     line-height: 1.5;
   }
 
+  /* ─ Fade-in on load ─ */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(5px);
+    animation: fadeUp 0.55s ease forwards;
+  }
+  @keyframes fadeUp {
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .fade-1 { animation-delay: 0.05s; }
+  .fade-2 { animation-delay: 0.16s; }
+  .fade-3 { animation-delay: 0.27s; }
+  .fade-4 { animation-delay: 0.38s; }
+  .fade-5 { animation-delay: 0.49s; }
+  .fade-6 { animation-delay: 0.60s; }
+  .fade-7 { animation-delay: 0.71s; }
+  .fade-8 { animation-delay: 0.82s; }
+
   main {
     max-width: 480px;
     margin: 0 auto;
@@ -92,7 +110,7 @@
   .hero-note {
     font-size: 15px;
     color: var(--muted);
-    margin-bottom: 24px;
+    margin-bottom: 8px;
   }
 
   section.steps {
@@ -176,25 +194,25 @@
 <body>
 <main>
 
-  <h1>bigtransformer</h1>
-  <p class="tagline">a slightly bigger transformer, thrown together with hopes and dreams. reads a text file, trains on it, predicts the next words.</p>
+  <h1 class="fade-in fade-1">bigtransformer</h1>
+  <p class="tagline fade-in fade-2">a slightly bigger transformer, thrown together with hopes and dreams. reads a text file, trains on it, predicts the next words.</p>
 
-  <video class="demo" autoplay muted loop playsinline>
+  <video class="demo fade-in fade-3" autoplay muted loop playsinline>
     <source src="demo.mp4" type="video/mp4">
   </video>
 
-  <div class="install" id="install" data-copy="git clone https://github.com/adeveloperduck/bigtransformer && cd bigtransformer">
+  <p class="hero-note fade-in fade-4">clones the repo and moves into it.</p>
+  <div class="install fade-in fade-4" id="install" data-copy="git clone https://github.com/adeveloperduck/bigtransformer && cd bigtransformer">
     <code>git clone https://github.com/adeveloperduck/bigtransformer</code>
     <svg class="copy-icon" viewBox="0 0 16 16" fill="none" stroke-width="1.4" xmlns="http://www.w3.org/2000/svg">
       <rect x="5.5" y="5.5" width="9" height="9" rx="1.5"/>
       <path d="M3.5 10.5H2.8A1.3 1.3 0 0 1 1.5 9.2V2.8A1.3 1.3 0 0 1 2.8 1.5H9.2A1.3 1.3 0 0 1 10.5 2.8V3.5"/>
     </svg>
   </div>
-  <p class="hero-note">clones the repo and moves into it.</p>
 
   <section class="steps">
 
-    <div class="step">
+    <div class="step fade-in fade-5">
       <p class="step-desc">then create the venv</p>
       <div class="cmd" data-copy="python3 -m venv .venv && source .venv/bin/activate">
         <code>python3 -m venv .venv && source .venv/bin/activate</code>
@@ -205,7 +223,7 @@
       </div>
     </div>
 
-    <div class="step">
+    <div class="step fade-in fade-6">
       <p class="step-desc">and after that, download the requirements</p>
       <div class="cmd" data-copy="pip install -r requirements.txt">
         <code>pip install -r requirements.txt</code>
@@ -216,7 +234,7 @@
       </div>
     </div>
 
-    <div class="step">
+    <div class="step fade-in fade-7">
       <p class="step-desc">and you're good to go. run the project with</p>
       <div class="cmd" data-copy="python3 mdl.py">
         <code>python3 mdl.py</code>
@@ -228,7 +246,7 @@
     </div>
   </section>
 
-  <footer>
+  <footer class="fade-in fade-8">
     <a href="https://github.com/adeveloperduck/bigtransformer" target="_blank" rel="noopener">github</a>
     <a href="https://adeveloperduck.github.io/.md/" target="_blank" rel="noopener">nav.md</a>
   </footer>
