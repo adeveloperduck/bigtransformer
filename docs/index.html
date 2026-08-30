@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>bigtransformer</title>
+<style>
+  :root {
+    --ink: #0a0a0a;
+    --muted: #71717a;
+    --faint: #a1a1aa;
+    --line: #e4e4e7;
+    --bg: #ffffff;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    background: var(--bg);
+    color: var(--ink);
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  main {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 20vh 24px 12vh;
+  }
+
+  h1 {
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin-bottom: 8px;
+  }
+
+  .tagline {
+    font-size: 16px;
+    color: var(--muted);
+    margin-bottom: 40px;
+  }
+
+  /* the hero: the run command, as plain text, not a bordered box */
+  .install {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    padding: 4px 0;
+  }
+
+  .install code {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--ink);
+    overflow-wrap: anywhere;
+    transition: color 0.15s ease;
+  }
+
+  .install .copy-icon {
+    flex: 0 0 auto;
+    width: 14px;
+    height: 14px;
+    margin-top: 3px;
+    stroke: var(--faint);
+    transition: stroke 0.15s ease;
+  }
+
+  .install:hover code { color: var(--muted); }
+  .install:hover .copy-icon { stroke: var(--muted); }
+
+  .install.copied code::after {
+    content: " — copied";
+    color: var(--faint);
+  }
+
+  .hero-note {
+    font-size: 13px;
+    color: var(--faint);
+    margin-bottom: 64px;
+  }
+
+  section.steps {
+    padding-top: 0;
+  }
+
+  section.steps h2 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--faint);
+    margin-bottom: 24px;
+  }
+
+  .step {
+    margin-bottom: 24px;
+  }
+
+  .step:last-child { margin-bottom: 0; }
+
+  .step-desc {
+    font-size: 15px;
+    color: var(--muted);
+    margin-bottom: 8px;
+  }
+
+  .step .cmd {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    padding: 2px 0;
+  }
+
+  .step .cmd code {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--ink);
+    overflow-x: auto;
+    white-space: nowrap;
+    transition: color 0.15s ease;
+  }
+
+  .step .cmd .copy-icon {
+    flex: 0 0 auto;
+    width: 13px;
+    height: 13px;
+    stroke: var(--faint);
+    transition: stroke 0.15s ease;
+  }
+
+  .step .cmd:hover code { color: var(--muted); }
+  .step .cmd:hover .copy-icon { stroke: var(--muted); }
+
+  .step .cmd.copied code::after {
+    content: " — copied";
+    color: var(--faint);
+  }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+  }
+
+  footer a {
+    color: var(--muted);
+    text-decoration: none;
+    margin-right: 32px;
+  }
+
+  footer a:last-child {
+    margin-right: 0;
+  }
+
+  footer a:hover { color: var(--ink); }
+
+  @media (max-width: 480px) {
+    main { padding-top: 14vh; }
+    h1 { font-size: 20px; }
+    .install code { font-size: 13px; white-space: normal; overflow-wrap: anywhere; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>bigtransformer</h1>
+  <p class="tagline">a slightly bigger transformer, thrown together with hopes and dreams. reads a text file, trains on it, predicts the next words.</p>
+
+  <div class="install" id="install" data-copy="git clone https://github.com/adeveloperduck/bigtransformer && cd bigtransformer">
+    <code>git clone https://github.com/adeveloperduck/bigtransformer</code>
+    <svg class="copy-icon" viewBox="0 0 16 16" fill="none" stroke-width="1.4" xmlns="http://www.w3.org/2000/svg">
+      <rect x="5.5" y="5.5" width="9" height="9" rx="1.5"/>
+      <path d="M3.5 10.5H2.8A1.3 1.3 0 0 1 1.5 9.2V2.8A1.3 1.3 0 0 1 2.8 1.5H9.2A1.3 1.3 0 0 1 10.5 2.8V3.5"/>
+    </svg>
+  </div>
+  <p class="hero-note">clones the repo and moves into it. click to copy.</p>
+
+  <section class="steps">
+    <h2>setup</h2>
+
+    <div class="step">
+      <p class="step-desc">then create the venv</p>
+      <div class="cmd" data-copy="python3 -m venv .venv && source .venv/bin/activate">
+        <code>python3 -m venv .venv && source .venv/bin/activate</code>
+        <svg class="copy-icon" viewBox="0 0 16 16" fill="none" stroke-width="1.4" xmlns="http://www.w3.org/2000/svg">
+          <rect x="5.5" y="5.5" width="9" height="9" rx="1.5"/>
+          <path d="M3.5 10.5H2.8A1.3 1.3 0 0 1 1.5 9.2V2.8A1.3 1.3 0 0 1 2.8 1.5H9.2A1.3 1.3 0 0 1 10.5 2.8V3.5"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="step">
+      <p class="step-desc">and after that, download the requirements</p>
+      <div class="cmd" data-copy="pip install -r requirements.txt">
+        <code>pip install -r requirements.txt</code>
+        <svg class="copy-icon" viewBox="0 0 16 16" fill="none" stroke-width="1.4" xmlns="http://www.w3.org/2000/svg">
+          <rect x="5.5" y="5.5" width="9" height="9" rx="1.5"/>
+          <path d="M3.5 10.5H2.8A1.3 1.3 0 0 1 1.5 9.2V2.8A1.3 1.3 0 0 1 2.8 1.5H9.2A1.3 1.3 0 0 1 10.5 2.8V3.5"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="step">
+      <p class="step-desc">and you're good to go. run the project with</p>
+      <div class="cmd" data-copy="python3 mdl.py">
+        <code>python3 mdl.py</code>
+        <svg class="copy-icon" viewBox="0 0 16 16" fill="none" stroke-width="1.4" xmlns="http://www.w3.org/2000/svg">
+          <rect x="5.5" y="5.5" width="9" height="9" rx="1.5"/>
+          <path d="M3.5 10.5H2.8A1.3 1.3 0 0 1 1.5 9.2V2.8A1.3 1.3 0 0 1 2.8 1.5H9.2A1.3 1.3 0 0 1 10.5 2.8V3.5"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <a href="https://github.com/adeveloperduck/bigtransformer" target="_blank" rel="noopener">github</a>
+    <a href="https://adeveloperduck.github.io/.md/" target="_blank" rel="noopener">nav.md</a>
+  </footer>
+
+</main>
+
+<script>
+  document.querySelectorAll('[data-copy]').forEach(function(el) {
+    el.addEventListener('click', function() {
+      const text = el.getAttribute('data-copy');
+      navigator.clipboard.writeText(text).catch(() => {});
+      el.classList.add('copied');
+      setTimeout(() => el.classList.remove('copied'), 1600);
+    });
+  });
+</script>
+
+</body>
+</html>
