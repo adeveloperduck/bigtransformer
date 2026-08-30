@@ -1,28 +1,34 @@
-bigtransformer is a no bs, easy to customise transformer based on liltransformer
+this is a slightly bigger transformer that i threw together with hopes and dreams
 
-https://github.com/user-attachments/assets/d6cf7b66-301b-4c7a-8e7a-ee98315f9077
 
-start by cloning and navigating into the repo
+https://github.com/user-attachments/assets/91380331-ca71-4a07-8dec-b47d19749cfe
+
+
+it reads a text file, trains on it, and predicts how ever words you want (no guarantees)
+it's probably fine.
+
+start by cloning the repo
 
 ```
-git clone https://github.com/adeveloperduck/bigtransformer.git && cd bigtransformer
+git clone https://github.com/adeveloperduck/bigtransformer && cd bigtransformer
 ```
 
-then, start a venv
+then create the venv
 
 ```
 python3 -m venv .venv && source .venv/bin/activate
 ```
 
-then download the requirements
+and after that, download the requirements
 
 ```
 pip install -r requirements.txt
 ```
 
-and your good to go! start the model with
+and you're good to go.
+
+run the project with
+
 ```
 python3 mdl.py
 ```
-
-or customise what its trained on by editing the data.txt file
