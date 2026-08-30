@@ -1,4 +1,4 @@
-bigtransformer. (it is not big.) is a no bs, easy to customise transformer based on liltransformer
+bigtransformer is a no bs, easy to customise transformer based on liltransformer
 
 https://github.com/user-attachments/assets/d6cf7b66-301b-4c7a-8e7a-ee98315f9077
 
